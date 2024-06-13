@@ -92,3 +92,4 @@ def learn():
     # Return a string the describes one thing you learned in ENSF 692.
     pass
 
+app.run(host='127.0.0.1') # replaces the need for environment variables eg FLASK_ENV
