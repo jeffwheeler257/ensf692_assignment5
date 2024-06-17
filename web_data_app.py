@@ -83,6 +83,7 @@ def book_data():
     # Create a DataFrame using the two lists
     book_data = pd.DataFrame(list(zip(titles, prices)), columns=['Titles','Prices'])
     book_data['Sales Prices'] = book_data['Prices'] * 0.75   
+    pd.options.display.float_format = '${:,.2f}'.format
     print(book_data)        # Print to the terminal as confirmation - only we can see this
 
     # Format and print the DataFrame using the html template provided in the templates subdirectory
