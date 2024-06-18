@@ -92,6 +92,6 @@ def book_data():
 @app.route("/learn")
 def learn():
     # Return a string the describes one thing you learned in ENSF 692.
-    pass
+    return "I learned how to import excel files into data frames and various ways to manipulate the data."
 
 app.run(host='127.0.0.1') # replaces the need for environment variables eg FLASK_ENV
